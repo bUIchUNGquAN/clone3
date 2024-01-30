@@ -12,7 +12,7 @@
     <!-- menu -->
     <div class="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl grid grid-cols-12 gap-0">
       <div
-        class="bg-slate-600 shadow-full xl:col-span-2 md:cols-span-4 col-span-12 md:block hidden md:sticky md:overflow-y-auto py-4"
+        class="bg-slate-600 shadow-full xl:col-span-2 md:cols-span-5 col-span-12 md:block hidden md:sticky md:overflow-y-auto py-4"
       >
         <div>
           <QuanMenu />

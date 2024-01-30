@@ -35,29 +35,43 @@
         <UIcon name="i-bxs-circle" color="yellow" dynamic />
       </div>
       <div class="flex items-center ml-1">
-        <UButton type="button" size="xm" variant="ghost">
+        <UButton type="button" variant="ghost">
           <span class="flex-shrink-0">
             <UIcon name="i-bxs-wallet" dynamic />
           </span>
         </UButton>
       </div>
       <div class="flex items-center ml-1">
-        <UButton type="button" size="xm" variant="ghost">
+        <UButton type="button" variant="ghost">
           <span class="flex-shrink-0">
             <UIcon name="i-bxs-chat" dynamic />
           </span>
         </UButton>
       </div>
       <div class="flex items-center ml-1">
-        <UButton type="button" size="xm" variant="ghost">
+        <UButton type="button" variant="ghost">
           <span class="flex-shrink-0">
             <UIcon name="i-bxs-bell" dynamic />
           </span>
         </UButton>
       </div>
       <div class="flex items-center ml-1">
-        <UButton type="button" variant="ghost"> Dang Nhap </UButton>
+        <UButton
+          type="button"
+          label="Open"
+          @click="isOpen = true"
+          variant="ghost"
+        >
+          Dang Nhap
+          <UModal v-model="isOpen">
+            <div class="p-4"><QuanTitle /></div
+          ></UModal>
+        </UButton>
       </div>
     </div>
   </div>
 </template>
+
+<script setup>
+const isOpen = ref(false);
+</script>

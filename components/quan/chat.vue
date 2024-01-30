@@ -7,7 +7,11 @@
     </div>
     <div class="flex flex-col items-center w-full gap-y-4">
       <div class="flex items-center w-full"></div>
-      <div class="flex items-center w-full">
+      <div
+        v-for="(x, index) in list"
+        :key="index"
+        class="flex items-center w-full"
+      >
         <div class="flex items-start w-full space-x-2 max-w-[300px]">
           <div class="relative select-none w-8 h-8 rounded-full">
             <img
@@ -24,7 +28,7 @@
               <UIcon name="i-bxs-circle" color="green" dynamic />
             </div>
             <p class="text-sm text-gray-800">5 daika</p>
-            <p class="break-words text-sm">blalalalal</p>
+            <p class="break-words text-sm">blalalalalASDkashd</p>
           </div>
         </div>
       </div>
@@ -32,4 +36,6 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const list = ref([1, 2, 3, 4, 5]);
+</script>
